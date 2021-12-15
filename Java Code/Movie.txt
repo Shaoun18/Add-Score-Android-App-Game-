@@ -1,0 +1,210 @@
+public class Movie {
+
+    private  String Name;
+    private  String Category;
+    private long ratio;
+    private String relasedate;
+    private  String Comment;
+    private String production;
+
+    public Movie(String name, String category, long ratio, String relasedate, String comment, String production) {
+        Name = name;
+        Category = category;
+        this.ratio = ratio;
+        this.relasedate = relasedate;
+        Comment = comment;
+        this.production = production;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getCategory() {
+        return Category;
+    }
+
+    public void setCategory(String category) {
+        Category = category;
+    }
+
+    public long getRatio() {
+        return ratio;
+    }
+
+    public void setRatio(long ratio) {
+        this.ratio = ratio;
+    }
+
+    public String getRelasedate() {
+        return relasedate;
+    }
+
+    public void setRelasedate(String relasedate) {
+        this.relasedate = relasedate;
+    }
+
+    public String getComment() {
+        return Comment;
+    }
+
+    public void setComment(String comment) {
+        Comment = comment;
+    }
+
+    public String getProduction() {
+        return production;
+    }
+
+    public void setProduction(String production) {
+        this.production = production;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "Name='" + Name + '\'' +
+                ", Category='" + Category + '\'' +
+                ", ratio=" + ratio +
+                ", relasedate='" + relasedate + '\'' +
+                ", Comment='" + Comment + '\'' +
+                ", production='" + production + '\'' +
+                '}';
+    }
+}
+
+
+public class Producation {
+    private String housename;
+    private String address;
+    private String initialbuject;
+    private String Boxoffice;
+
+    public Producation(String housename, String address, String initialbuject, String boxoffice) {
+        this.housename = housename;
+        this.address = address;
+        this.initialbuject = initialbuject;
+        Boxoffice = boxoffice;
+    }
+
+    public String getHousename() {
+        return housename;
+    }
+
+    public void setHousename(String housename) {
+        this.housename = housename;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getInitialbuject() {
+        return initialbuject;
+    }
+
+    public void setInitialbuject(String initialbuject) {
+        this.initialbuject = initialbuject;
+    }
+
+    public String getBoxoffice() {
+        return Boxoffice;
+    }
+
+    public void setBoxoffice(String boxoffice) {
+        Boxoffice = boxoffice;
+    }
+
+    @Override
+    public String toString() {
+        return "Producation{" +
+                "housename='" + housename + '\'' +
+                ", address='" + address + '\'' +
+                ", initialbuject='" + initialbuject + '\'' +
+                ", Boxoffice='" + Boxoffice + '\'' +
+                '}';
+    }
+}
+
+
+public class Comment {
+    private String username;
+    private String date;
+    private String Commnent;
+
+    public Comment(String username, String date, String commnent) {
+        this.username = username;
+        this.date = date;
+        Commnent = commnent;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "username='" + username + '\'' +
+                ", date='" + date + '\'' +
+                ", Commnent='" + Commnent + '\'' +
+                '}';
+    }
+
+    public String getCommnent() {
+        return Commnent;
+    }
+
+    public void setCommnent(String commnent) {
+        Commnent = commnent;
+    }
+}
+
+
+package movie;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Movie {
+    public static void main(String[] args) {
+    
+        System.out.println("Number of Movie print :  ");
+        Scanner Sc = new Scanner(System.in);
+        int noofMov = Sc.nextInt();
+
+        ArrayList<Movie> movies = new ArrayList<>();
+        for (int i =1; i<noofMov; i++){
+            System.out.println("Num of Movie : " + i + " info");
+            System.out.println("-------------------------------");
+            System.out.println("Enter your Movie Name : ");
+            String Name = Sc.next();
+            System.out.println("Enter the category : ");
+            String category = Sc.next();
+            System.out.println("Enter the Film Date : ");
+            String rating = Sc.next();
+
+        }
+    }
+    
+}

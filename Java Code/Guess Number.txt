@@ -1,0 +1,42 @@
+package mainclass;
+import java.security.SecureRandom;
+import java.util.Scanner;
+
+public class MainClass {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        SecureRandom r = new SecureRandom();
+        Scanner sc = new Scanner(System.in);
+
+        int n = r.nextInt(100)+1;
+        System.out.println(+n);
+        System.out.println("Welcome to guess the number game....!"+'\n');
+ for (int i = 1; i<=10; i++){
+      int x =15;
+            int y =20;
+        System.out.println("Try "+i);
+                int input = sc.nextInt(); 
+                 {
+                if(n==input){
+                    System.out.println("Congratulation....!");
+                    break;
+                }
+                else {
+                    System.out.println("Wrong answer, try again");
+                }
+                if (i==10){
+                    System.out.println("You are ran out of turn");
+                    System.out.println("The number was "+n);
+                }
+                if(i == 6){
+                System.out.println("The number is between "+(n-x)+ " and " +(n+x));
+            }
+            else if(i==8){
+                System.out.println("The number is between "+(n-y)+ " and " +(n+y));
+            }
+            }
+            
+        }
+        }
+    }
